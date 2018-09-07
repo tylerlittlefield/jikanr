@@ -7,11 +7,11 @@
 query(type, query, page = 1)
 }
 \arguments{
-\item{type}{Top items of this type.}
+\item{type}{Query items of this type: anime, manga, person, character.}
 
 \item{query}{A string containing the query, example: "dragon ball".}
 
-\item{page}{The Top page on MyAnimeList is paginated offers 50 items per page.}
+\item{page}{The page number on MyAnimeList is paginated, offers 50 items per page.}
 }
 \description{
 Search results for the query. NOTE: MyAnimeList only processes queries with a minimum of 3 letters.

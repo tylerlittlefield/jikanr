@@ -7,14 +7,14 @@
 top(type, subtype = NULL, page = 1)
 }
 \arguments{
-\item{type}{Top items of this type}
+\item{type}{Top items of this type: anime, manga, people, characters.}
 
 \item{subtype}{Refine the data using a subtype such as: \cr
 Anime: airing, upcoming, tv, movie, ova, special. \cr
 Manga: manga, novels, oneshots, doujin, manhwa, manhua, \cr
 Both: bypopularity, favorite.}
 
-\item{page}{The Top page on MyAnimeList is paginated offers 50 items per page}
+\item{page}{The Top page on MyAnimeList is paginated offers 50 items per page.}
 }
 \description{
 Top items on MyAnimeList. Note: subtype returns a filtered top list of a type
