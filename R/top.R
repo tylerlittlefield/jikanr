@@ -21,23 +21,3 @@ top <- function(type, subtype = NULL, page = 1) {
 
   return(dat)
 }
-
-# Old method, rjson
-#
-# replace_nulls <- function(dat, replacement) {
-#   apply(dat, 2, function(y) sapply(y, function(x) ifelse(is.null(x), replacement, x)))
-# }
-#
-# top <- function(type, subtype = NULL, page = 1) {
-#
-#   url_string <- paste("https://api.jikan.moe/v3/top", type, page, subtype, sep = "/")
-#   response <- httr::GET(url_string)
-#   dat <- rjson::fromJSON(httr::content(response, type = "text", encoding = "UTF-8"))
-#   dat <- dat$top
-#   dat <- do.call(rbind, dat)
-#   dat <- as.data.frame(dat)
-#   dat <- replace_nulls(dat, NA)
-#   dat <- tibble::as_tibble(dat)
-#
-#   return(dat)
-# }
