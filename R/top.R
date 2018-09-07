@@ -5,8 +5,8 @@
 #' item. For example, the top Anime (type) movies (subtype). Note2: subtype is
 #' only for anime and manga types.
 #'
-#' @param type Top items of this type
-#' @param page The Top page on MyAnimeList is paginated offers 50 items per page
+#' @param type Top items of this type: anime, manga, people, characters.
+#' @param page The Top page on MyAnimeList is paginated offers 50 items per page.
 #' @param subtype Refine the data using a subtype such as: \cr
 #' Anime: airing, upcoming, tv, movie, ova, special. \cr
 #' Manga: manga, novels, oneshots, doujin, manhwa, manhua, \cr

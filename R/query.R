@@ -2,9 +2,9 @@
 #'
 #' @description Search results for the query. NOTE: MyAnimeList only processes queries with a minimum of 3 letters.
 #'
-#' @param type Top items of this type.
+#' @param type Query items of this type: anime, manga, person, character
 #' @param query A string containing the query, example: "dragon ball".
-#' @param page The Top page on MyAnimeList is paginated offers 50 items per page.
+#' @param page The page number on MyAnimeList is paginated, offers 50 items per page.
 #'
 #' @examples
 #' query("manga", "berserk")
