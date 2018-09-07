@@ -16,9 +16,9 @@ There are 4 functions: `top`, `query`, `schedule`, and `season`:
 
 * type: anime, manga, people, characters
 * subtype: 
-  * Anime: airing upcoming tv movie ova special 
-  * Manga: manga novels oneshots doujin manhwa manhua 
-  * Both: bypopularity favorite
+  * Anime: airing, upcoming, tv, movie, ova, special 
+  * Manga: manga, novels, oneshots, doujin, manhwa, manhua 
+  * Both: bypopularity, favorite
 * page: page number, interger value that defaults to 1
 
 #### `query(type, query, page)`
