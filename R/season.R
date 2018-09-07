@@ -1,4 +1,4 @@
-#' Anime of the specified season and year
+#' @title Anime of the specified season and year
 #'
 #' @param year Specify the year.
 #' @param season Specify the season: summer, spring, fall, winter.

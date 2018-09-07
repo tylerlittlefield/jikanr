@@ -1,4 +1,4 @@
-#' Anime of the specified day
+#' @title Anime of the specified day
 #'
 #' @param day Monday through Friday. Defaults to NULL and returns a little of all days.
 #'

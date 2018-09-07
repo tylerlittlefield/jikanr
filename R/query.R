@@ -1,4 +1,4 @@
-#' Query items on MyAnimeList.
+#' @title Query items on MyAnimeList.
 #'
 #' @param type Top items of this type.
 #' @param query A string containing the query, example: "dragon ball".

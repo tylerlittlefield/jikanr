@@ -1,3 +1,6 @@
+#' @title Top item on MyAnimeList
+#'
+#' @description
 #' Top items on MyAnimeList. Note: subtype returns a filtered top list of a type
 #' item. For example, the top Anime (type) movies (subtype). Note2: subtype is
 #' only for anime and manga types.
