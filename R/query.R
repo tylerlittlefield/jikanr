@@ -12,6 +12,9 @@
 #' @export
 query <- function(type, query, page = 1) {
 
+  if(nchar(query) < 3)
+    {stop("type var is < 3 letters. MyAnimeList only accepts queries with 3 or more letters.")}
+
   query <- gsub(" ", "%20", query)
   query <- paste0("?q=", query, "&page=", page)
   url_string <- paste("https://api.jikan.moe/v3/search", type, query, sep = "/")
