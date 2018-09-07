@@ -1,6 +1,11 @@
 #' @title Anime of the specified day
 #'
+#' @description Anime schedule of the week or specified day. Note: If you don't pass the day parameter, it'll return the schedule for all days of the week.
+#'
 #' @param day Monday through Friday. Defaults to NULL and returns a little of all days.
+#'
+#' @examples
+#' schedule("monday")
 #'
 #' @export
 schedule <- function(day=NULL) {

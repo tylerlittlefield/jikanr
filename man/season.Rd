@@ -12,5 +12,9 @@ season(year, season)
 \item{season}{Specify the season: summer, spring, fall, winter.}
 }
 \description{
-Anime of the specified season and year
+Anime of the specified season. Note: Both parameters are required.
+}
+\examples{
+season(1999, "winter")
+
 }

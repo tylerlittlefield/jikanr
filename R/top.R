@@ -12,7 +12,7 @@
 #' Manga: manga, novels, oneshots, doujin, manhwa, manhua, \cr
 #' Both: bypopularity, favorite.
 #'
-#' @example
+#' @examples
 #' top("anime", "tv")
 #'
 #' @export
@@ -21,7 +21,8 @@ top <- function(type, subtype = NULL, page = 1) {
   anime_subtypes <- c("airing", "upcoming", "tv", "movie", "ova", "special")
   manga_subtypes <- c("manga", "novels", "oneshots", "doujin", "manhwa", "manhua")
 
-  if(is.null(subtype)) {subtype}
+  if(is.null(subtype))
+    {subtype}
   else
   if(type == "anime" & subtype %in% manga_subtypes)
     {stop(subtype, " not available for anime, see ?top")}

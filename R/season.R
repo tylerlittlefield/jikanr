@@ -1,7 +1,12 @@
 #' @title Anime of the specified season and year
 #'
+#' @description Anime of the specified season. Note: Both parameters are required.
+#'
 #' @param year Specify the year.
 #' @param season Specify the season: summer, spring, fall, winter.
+#'
+#' @examples
+#' season(1999, "winter")
 #'
 #' @export
 season <- function(year, season) {

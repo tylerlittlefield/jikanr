@@ -10,5 +10,9 @@ schedule(day = NULL)
 \item{day}{Monday through Friday. Defaults to NULL and returns a little of all days.}
 }
 \description{
-Anime of the specified day
+Anime schedule of the week or specified day. Note: If you don't pass the day parameter, it'll return the schedule for all days of the week.
+}
+\examples{
+schedule("monday")
+
 }

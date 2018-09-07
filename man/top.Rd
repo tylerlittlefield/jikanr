@@ -2,7 +2,7 @@
 % Please edit documentation in R/top.R
 \name{top}
 \alias{top}
-\title{Top item on MyAnimeList}
+\title{Top items on MyAnimeList}
 \usage{
 top(type, subtype = NULL, page = 1)
 }
@@ -20,4 +20,8 @@ Both: bypopularity, favorite.}
 Top items on MyAnimeList. Note: subtype returns a filtered top list of a type
 item. For example, the top Anime (type) movies (subtype). Note2: subtype is
 only for anime and manga types.
+}
+\examples{
+top("anime", "tv")
+
 }

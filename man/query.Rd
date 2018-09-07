@@ -14,5 +14,9 @@ query(type, query, page = 1)
 \item{page}{The Top page on MyAnimeList is paginated offers 50 items per page.}
 }
 \description{
-Query items on MyAnimeList.
+Search results for the query. NOTE: MyAnimeList only processes queries with a minimum of 3 letters.
+}
+\examples{
+query("manga", "berserk")
+
 }

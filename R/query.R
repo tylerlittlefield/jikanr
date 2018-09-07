@@ -1,8 +1,13 @@
 #' @title Query items on MyAnimeList.
 #'
+#' @description Search results for the query. NOTE: MyAnimeList only processes queries with a minimum of 3 letters.
+#'
 #' @param type Top items of this type.
 #' @param query A string containing the query, example: "dragon ball".
 #' @param page The Top page on MyAnimeList is paginated offers 50 items per page.
+#'
+#' @examples
+#' query("manga", "berserk")
 #'
 #' @export
 query <- function(type, query, page = 1) {
