@@ -1,4 +1,4 @@
-#' @title Top item on MyAnimeList
+#' @title Top items on MyAnimeList
 #'
 #' @description
 #' Top items on MyAnimeList. Note: subtype returns a filtered top list of a type
@@ -12,14 +12,22 @@
 #' Manga: manga, novels, oneshots, doujin, manhwa, manhua, \cr
 #' Both: bypopularity, favorite.
 #'
+#' @example
+#' top("anime", "tv")
+#'
 #' @export
 top <- function(type, subtype = NULL, page = 1) {
 
   anime_subtypes <- c("airing", "upcoming", "tv", "movie", "ova", "special")
   manga_subtypes <- c("manga", "novels", "oneshots", "doujin", "manhwa", "manhua")
 
-  if(type == "anime" & subtype %in% manga_subtypes) {stop(subtype, " not available for anime, see ?top")}
-  if(type == "manga" & subtype %in% anime_subtypes) {stop(subtype, " not available for manga, see ?top")}
+  if(is.null(subtype)) {subtype}
+  else
+  if(type == "anime" & subtype %in% manga_subtypes)
+    {stop(subtype, " not available for anime, see ?top")}
+  else
+  if(type == "manga" & subtype %in% anime_subtypes)
+    {stop(subtype, " not available for manga, see ?top")}
 
   url_string <- paste("https://api.jikan.moe/v3/top", type, page, subtype, sep = "/")
   response <- httr::GET(url_string)
