@@ -1,5 +1,5 @@
 # jikanr [![Travis build status](https://travis-ci.org/tyluRp/jikanr.svg?branch=master)](https://travis-ci.org/tyluRp/jikanr)
-R Interface to Jikan API
+R Interface to [Jikan API](https://jikan.docs.apiary.io/)
 
 ![](inst/figures/sailor_moon_cat.gif)
 
