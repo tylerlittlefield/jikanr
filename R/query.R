@@ -13,7 +13,7 @@
 query <- function(type, query, page = 1) {
 
   if(nchar(query) < 3)
-    {stop("type var is < 3 letters. MyAnimeList only accepts queries with 3 or more letters.")}
+    {stop("type var is < 3 characters. MyAnimeList only accepts queries with 3 or more characters.")}
 
   query <- gsub(" ", "%20", query)
   query <- paste0("?q=", query, "&page=", page)
