@@ -1,7 +1,7 @@
 # jikanr [![Travis build status](https://travis-ci.org/tyluRp/jikanr.svg?branch=master)](https://travis-ci.org/tyluRp/jikanr)
 R Interface to Jikan API
 
-![](https://i.gifer.com/4Kml.gif)
+![](inst/figures/sailor_moon_cat.gif)
 
 ## Installation
 
