@@ -8,6 +8,34 @@ R Interface to Jikan API
 devtools::install_github("tylurp/jikanr")
 ```
 
+## Usage
+
+There are 4 functions: `top`, `query`, `schedule`, and `season`:
+
+#### `top(type, subtype, page)`
+
+* type: anime, manga, people, characters
+* subtype: 
+  * Anime: airing upcoming tv movie ova special 
+  * Manga: manga novels oneshots doujin manhwa manhua 
+  * Both: bypopularity favorite
+* page: page number, interger value that defaults to 1
+
+#### `query(type, query, page)`
+
+* type: anime, manga, person, character
+* query: a string, for example, "dragon ball"
+* page: page number, interger value that defaults to 1
+
+#### `schedule(day)`
+
+* day: monday, tuesday, wednesday, thursday, friday, saturday, sunday. Defaults to NULL and pulls data from all days of the week and returns a list.
+
+#### `season(year, season)`
+
+* year: a year value, for example, 1999
+* season: spring, summer, winter, fall.
+
 ## Demo
 
 Grab the top 50 anime using `top`:
